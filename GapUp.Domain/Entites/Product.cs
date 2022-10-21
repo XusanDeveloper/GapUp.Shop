@@ -22,5 +22,16 @@ namespace GapUp.Domain.Entites
                 type = v.type
             };
         }
+        public static explicit operator ProductViewModel(Product v)
+        {
+            return new ProductViewModel
+            {
+                Name = v.Name,
+                PhotoUrl = v.PhotoUrl,
+                Description = v.Description,
+                Price = v.Price,
+                type = v.type
+            };
+        }
     }
 }

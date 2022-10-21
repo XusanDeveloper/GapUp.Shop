@@ -18,14 +18,7 @@ namespace GapUp.Services.Services
         {
             var createdProduct = await productRepository.AddProduct((Product)productViewModel);
 
-            return new ProductViewModel
-            {
-                Name = createdProduct.Name,
-                PhotoUrl = createdProduct.PhotoUrl,
-                Description = createdProduct.Description,
-                Price = createdProduct.Price,
-                type = createdProduct.type
-            };
+            return (ProductViewModel)createdProduct;
 
         }
 
@@ -37,16 +30,8 @@ namespace GapUp.Services.Services
         public async Task<ProductViewModel> Get(Guid id)
         {
             var product = await productRepository.GetProduct(id);
-            var model = new ProductViewModel
-            {
-                Id = product.Id,
-                Name = product.Name,
-                PhotoUrl= product.PhotoUrl,
-                Description= product.Description,
-                Price= product.Price,
-                type= product.type
-            };
-            return model;
+            
+            return (ProductViewModel)product;
         }
 
         public async Task<IEnumerable<ProductViewModel>> GetAll()
@@ -55,16 +40,7 @@ namespace GapUp.Services.Services
             var products = await productRepository.GetProducts();
             foreach (var product in products)
             {
-                var model = new ProductViewModel
-                {
-                    Id = product.Id,
-                    Name = product.Name,
-                    PhotoUrl= product.PhotoUrl,
-                    Description= product.Description,   
-                    Price= product.Price,
-                    type= product.type
-                };
-                result.Add(model);
+                result.Add((ProductViewModel)product);
             }
             return result;
         }
@@ -72,15 +48,8 @@ namespace GapUp.Services.Services
         public async Task<ProductViewModel> Update(Guid id, ProductViewModel productViewModel)
         {
             var updatedProduct = await productRepository.UpdateProduct(id, (Product)productViewModel);
-            return new ProductViewModel
-            {
-                Id = updatedProduct.Id,
-                Name = updatedProduct.Name,
-                PhotoUrl = updatedProduct.PhotoUrl,
-                Description = updatedProduct.Description,
-                Price = updatedProduct.Price,
-                type = updatedProduct.type
-            };
+            
+            return (ProductViewModel)updatedProduct;
         }
     }
 }
