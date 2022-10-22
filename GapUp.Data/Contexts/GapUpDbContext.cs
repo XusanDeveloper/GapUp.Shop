@@ -1,4 +1,5 @@
-﻿using GapUp.Domain.Entites;
+﻿using GapUp.Domain.Configuration;
+using GapUp.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,10 @@ namespace GapUp.Domain.Contexts
         {
 
         }
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+        }
         public DbSet<Product> Products { get; set; }
-        public DbSet<BasketItem> BasketItems { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 using GapUp.Data.Contracts;
 using GapUp.Data.Repositories;
 using GapUp.Domain.Contexts;
+using GapUp.Services.Extensions;
 using GapUp.Services.Interfaces;
 using GapUp.Services.Services;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ILoggerManager, LoggerManager>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+
+builder.Services.ConfigureRepositoryManager();
 
 builder.Services.AddDbContext<GapUpDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("GapUpDb")));
 

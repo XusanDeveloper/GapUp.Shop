@@ -5,11 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GapUp.Data.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : RepositoryBase<Product>, IProductRepository
     {
         private readonly GapUpDbContext dbContext;
 
         public ProductRepository(GapUpDbContext dbContext)
+            : base(dbContext)
         {
             this.dbContext = dbContext;
         }
@@ -32,15 +33,14 @@ namespace GapUp.Data.Repositories
             return false;
         }
 
-        public async Task<Product> GetProduct(Guid id)
-        {
-            return await dbContext.Products.FindAsync(id);
-        }
+        public async Task<IQueryable<Product>> GetProduct(Guid id, bool trackChanges) =>
+            await FindByCondition(x => ids.Contains(x.Id), trackChanges).ToListAsync();
 
-        public async Task<IEnumerable<Product>> GetProducts()
-        {
-            return await dbContext.Products.ToListAsync();
-        }
+
+        public async Task<IEnumerable<Product>> GetProducts(bool trackChanges) =>
+            FindAll(trackChanges)
+            .OrderBy(c => c.Name)
+            .ToList();
 
         public async Task<Product> UpdateProduct(Guid id, Product product)
         {
