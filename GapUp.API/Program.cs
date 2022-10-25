@@ -25,6 +25,10 @@ builder.Services.ConfigureRepositoryManager();
 builder.Services.AddDbContext<GapUpDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("GapUpDb")));
 
 var app = builder.Build();
+using var scope = app.Services.CreateScope();
+
+var logger = scope.ServiceProvider.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
 
 if (app.Environment.IsDevelopment())
 {

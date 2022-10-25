@@ -10,21 +10,33 @@ namespace GapUp.API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService productService;
+        private readonly ILoggerManager logger;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, ILoggerManager logger)
         {
             this.productService = productService;
+            this.logger = logger;
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await productService.GetAll());
+            return Ok(await productService.GetAll(trackchanges: false));
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            return Ok(await productService.Get(id));
+            var product = await productService.Get(id);
+            
+            if (product == null)
+            {
+                logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+            else
+            {
+                return Ok(await productService.Get(id));
+            }
         }
 
         [HttpPost]

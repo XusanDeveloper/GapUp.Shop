@@ -9,10 +9,12 @@ namespace GapUp.Services.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository productRepository;
+        private readonly IMapper mapper;
 
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository, IMapper mapper)
         {
             this.productRepository = productRepository;
+            this.mapper = mapper;
         }
         public async Task<ProductViewModel> Create(ProductViewModel productViewModel)
         {
@@ -29,20 +31,18 @@ namespace GapUp.Services.Services
 
         public async Task<ProductViewModel> Get(Guid id)
         {
-            var product = await productRepository.GetProduct(id);
+            var product = await productRepository.GetProductAsync(id, trackChanges: false);
             
             return (ProductViewModel)product;
         }
 
         public async Task<IEnumerable<ProductViewModel>> GetAll()
         {
-            var result = new List<ProductViewModel>();
-            var products = await productRepository.GetProducts();
-            foreach (var product in products)
-            {
-                result.Add((ProductViewModel)product);
-            }
-            return result;
+            var products = await productRepository.GetAllProductsAsync(trackchanges: false);
+
+            var productViewModel = mapper.Map<IEnumerable<ProductViewModel>>(products);
+
+            return productViewModel;
         }
 
         public async Task<ProductViewModel> Update(Guid id, ProductViewModel productViewModel)

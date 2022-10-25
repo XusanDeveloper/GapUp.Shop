@@ -4,7 +4,7 @@ namespace GapUp.Services.Interfaces
 {
     public interface IProductService
     {
-        Task<IEnumerable<ProductViewModel>> GetAll();
+        Task<IEnumerable<ProductViewModel>> GetAll(bool trackchanges);
         Task<ProductViewModel> Create(ProductViewModel productViewModel);
         Task<ProductViewModel> Get(Guid id);
         Task<ProductViewModel> Update(Guid id, ProductViewModel productViewModel);

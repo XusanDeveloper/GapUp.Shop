@@ -8,18 +8,14 @@ namespace GapUp.Data.Repositories
     public class ProductRepository : RepositoryBase<Product>, IProductRepository
     {
         private readonly GapUpDbContext dbContext;
-
+                                                            
         public ProductRepository(GapUpDbContext dbContext)
             : base(dbContext)
         {
             this.dbContext = dbContext;
         }
-        public async Task<Product> AddProduct(Product product)
-        {
-            await dbContext.Products.AddAsync(product);
-            await dbContext.SaveChangesAsync();
-            return product;
-        }
+        public void AddProduct(Product product) => Create(product);
+        
 
         public async Task<bool> DeleteProduct(Guid id)
         {
@@ -33,14 +29,14 @@ namespace GapUp.Data.Repositories
             return false;
         }
 
-        public async Task<IQueryable<Product>> GetProduct(Guid id, bool trackChanges) =>
-            await FindByCondition(x => ids.Contains(x.Id), trackChanges).ToListAsync();
+        public async Task<Product> GetProductAsync(Guid id, bool trackChanges) =>
+            await FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
 
 
-        public async Task<IEnumerable<Product>> GetProducts(bool trackChanges) =>
-            FindAll(trackChanges)
+        public async Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges) =>
+            await FindAll(trackChanges)
             .OrderBy(c => c.Name)
-            .ToList();
+            .ToListAsync();
 
         public async Task<Product> UpdateProduct(Guid id, Product product)
         {
