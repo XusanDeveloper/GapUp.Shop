@@ -42,12 +42,28 @@ namespace GapUp.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] ProductViewModel product)
         {
+            if (product == null)
+            {
+                logger.LogError("ProductViewModel object sent from client is null.");
+                return BadRequest("ProductViewModel object is null");
+            }
             return Ok(await productService.Create(product));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(Guid id, [FromForm] ProductViewModel productViewModel)
+        public async Task<IActionResult> Update(Guid id, [FromForm] ProductViewModel productViewModel)
         {
+            if (productViewModel == null)
+            {
+                logger.LogError("EmployeeForUpdateDto object sent from client is null.");
+                return BadRequest("EmployeeForUpdateDto object is null");
+            }
+            var product = await productService.Get(id);
+            if (product == null)
+            {
+                logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
             var updatedProduct = await productService.Update(id, productViewModel);
             return Ok(updatedProduct);
         }
@@ -55,10 +71,16 @@ namespace GapUp.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var deletedProduct = await productService.Delete(id);
-            if (deletedProduct)
-                return NoContent();
-            return NotFound();
+            var product = await productService.Get(id);
+            if (product == null)
+            {
+                logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+            await productService.Delete(id);
+            return NoContent();
+
+
         }
     }
 }

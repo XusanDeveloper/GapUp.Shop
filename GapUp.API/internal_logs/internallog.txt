@@ -513,3 +513,1499 @@
 2022-10-22 19:56:04.8416 Trace Closing Layout Renderer: ${message}
 2022-10-22 19:56:04.8416 Debug Finished closing logging configuration.
 2022-10-22 19:56:04.8416 Info LogFactory has been closed.
+2022-10-25 19:07:20.2629 Info Message Template Auto Format enabled
+2022-10-25 19:07:20.3319 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:07:20.4613 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:07:20.4714 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:07:20.4897 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.4975 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:07:20.4975 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:07:20.4975 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.4975 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:07:20.5182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.5182 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:07:20.5182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.5182 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:07:20.5182 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:07:20.5182 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:07:20.5287 Trace ParseRulesElement
+2022-10-25 19:07:20.5802 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:07:20.5802 Debug --- NLog configuration dump ---
+2022-10-25 19:07:20.5802 Debug Targets:
+2022-10-25 19:07:20.5802 Debug FileTarget(Name=logfile)
+2022-10-25 19:07:20.5802 Debug Rules:
+2022-10-25 19:07:20.5802 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:07:20.5915 Debug --- End of NLog configuration dump ---
+2022-10-25 19:07:20.5915 Trace FindReachableObject<System.Object>:
+2022-10-25 19:07:20.5915 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:07:20.6152 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:07:20.6293 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:07:20.6293 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:07:20.6293 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:07:20.6293 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:07:20.6293 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.6293 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:07:20.6293 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.6383 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:07:20.6383 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:07:20.6383 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:07:20.6383 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:07:20.6383 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.6383 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:07:20.6383 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.6383 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:07:20.6383 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:07:20.6383 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:07:20.6383 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:07:20.6589 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:07:20.6707 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:07:20.6707 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:07:20.6707 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:07:20.6871 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:07:20.6871 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:07:20.6871 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:07:20.6871 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:07:20.6871 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:07:20.7007 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.7007 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:07:20.7007 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:07:20.7007 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:07:20.7007 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.7007 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:07:20.7007 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.7007 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:07:20.7007 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:07:20.7007 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:07:20.7007 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:07:20.7007 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:07:20.7007 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:07:20.7007 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:07:20.7007 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:07:20.7007 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.7007 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:07:20.7007 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:07:20.7007 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:07:20.7200 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:07:20.7200 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:07:20.7200 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:07:20.7200 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:07:20.7200 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:07:20.7200 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:07:20.7200 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:07:20.7200 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:07:20.7200 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:11:19.3738 Info Message Template Auto Format enabled
+2022-10-25 19:11:19.6170 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:11:19.8958 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:11:19.9038 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:19.9038 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:19.9038 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:19.9038 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:19.9193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:19.9193 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:19.9193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:19.9193 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:19.9193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:19.9193 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:19.9193 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:11:19.9193 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:11:19.9193 Trace ParseRulesElement
+2022-10-25 19:11:19.9589 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:11:19.9589 Debug --- NLog configuration dump ---
+2022-10-25 19:11:19.9589 Debug Targets:
+2022-10-25 19:11:19.9662 Debug FileTarget(Name=logfile)
+2022-10-25 19:11:19.9662 Debug Rules:
+2022-10-25 19:11:19.9662 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:11:19.9662 Debug --- End of NLog configuration dump ---
+2022-10-25 19:11:19.9839 Trace FindReachableObject<System.Object>:
+2022-10-25 19:11:20.0769 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:11:20.0769 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:11:20.0769 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:11:20.0769 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:11:20.0914 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:20.0914 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:20.0914 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.0914 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:20.0914 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.0914 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:11:20.0914 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:20.0914 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:20.0914 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:20.0914 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.0914 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:20.0914 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.0914 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:20.0914 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:11:20.0914 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:11:20.0914 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:11:20.1088 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:11:20.1088 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:11:20.1304 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:11:20.1407 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:11:20.1407 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:20.1407 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:11:20.1407 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:20.1407 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:11:20.1407 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:11:20.1542 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:20.1542 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:20.1542 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:20.1542 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:20.1542 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.1542 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:20.1542 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.1542 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:20.1542 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:20.1542 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:11:20.1542 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:20.1542 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:11:20.1542 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:20.1542 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:20.1542 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:20.1685 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.1685 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:20.1685 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:20.1685 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:11:20.1685 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:11:20.1685 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:11:20.1685 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:11:20.1924 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:20.1924 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:11:20.1924 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:20.1924 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:11:20.1924 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:11:20.1924 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:11:43.5592 Info Message Template Auto Format enabled
+2022-10-25 19:11:43.6226 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:11:43.7039 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:11:43.7039 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:43.7235 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.7235 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:43.7322 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:43.7322 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.7322 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:43.7322 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.7322 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:43.7322 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.7322 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:43.7322 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:11:43.7322 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:11:43.7467 Trace ParseRulesElement
+2022-10-25 19:11:43.7708 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:11:43.7708 Debug --- NLog configuration dump ---
+2022-10-25 19:11:43.7708 Debug Targets:
+2022-10-25 19:11:43.7708 Debug FileTarget(Name=logfile)
+2022-10-25 19:11:43.7708 Debug Rules:
+2022-10-25 19:11:43.7787 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:11:43.7787 Debug --- End of NLog configuration dump ---
+2022-10-25 19:11:43.7787 Trace FindReachableObject<System.Object>:
+2022-10-25 19:11:43.7787 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:11:43.7787 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:11:43.7787 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:11:43.7938 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:11:43.7938 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:43.7938 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:43.7938 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.7938 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:43.7938 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.7938 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:11:43.7938 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:43.7938 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:43.7938 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:43.7938 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.7938 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:43.7938 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.7938 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:43.7938 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:11:43.7938 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:11:43.7938 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:11:43.8147 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:11:43.8147 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:11:43.8329 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:11:43.8329 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:11:43.8329 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:43.8329 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:11:43.8329 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:43.8329 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:11:43.8329 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:11:43.8429 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.8429 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:43.8429 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:43.8429 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:11:43.8429 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.8429 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:11:43.8429 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.8429 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:11:43.8429 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:43.8429 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:11:43.8429 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:11:43.8429 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:11:43.8429 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:11:43.8429 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:43.8429 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:11:43.8429 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.8429 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:11:43.8429 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:11:43.8429 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:11:43.8580 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:11:43.8580 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:11:43.8580 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:11:43.8580 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:11:43.8580 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:11:43.8580 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:11:43.8580 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:11:43.8580 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:11:43.8580 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:17:54.5776 Info Message Template Auto Format enabled
+2022-10-25 19:17:54.6285 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:17:54.6987 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:17:54.7061 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:17:54.7182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.7182 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:17:54.7182 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:17:54.7318 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.7318 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:17:54.7318 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.7318 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:17:54.7318 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.7318 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:17:54.7318 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:17:54.7318 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:17:54.7318 Trace ParseRulesElement
+2022-10-25 19:17:54.7877 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:17:54.7877 Debug --- NLog configuration dump ---
+2022-10-25 19:17:54.7877 Debug Targets:
+2022-10-25 19:17:54.7964 Debug FileTarget(Name=logfile)
+2022-10-25 19:17:54.7964 Debug Rules:
+2022-10-25 19:17:54.7964 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:17:54.7964 Debug --- End of NLog configuration dump ---
+2022-10-25 19:17:54.8220 Trace FindReachableObject<System.Object>:
+2022-10-25 19:17:54.8220 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:17:54.8261 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:17:54.8261 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:17:54.8261 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:17:54.8261 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:17:54.8261 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:17:54.8261 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8261 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:17:54.8261 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8261 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:17:54.8261 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:17:54.8261 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:17:54.8410 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:17:54.8410 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8410 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:17:54.8410 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8410 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:17:54.8410 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:17:54.8410 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:17:54.8410 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:17:54.8410 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:17:54.8622 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:17:54.8622 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:17:54.8622 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:17:54.8735 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:17:54.8735 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:17:54.8735 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:17:54.8735 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:17:54.8735 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:17:54.8735 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.8735 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:17:54.8735 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:17:54.8735 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:17:54.8878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8878 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:17:54.8878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8878 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:17:54.8878 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:17:54.8878 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:17:54.8878 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:17:54.8878 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:17:54.8878 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:17:54.8878 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:17:54.8878 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:17:54.8878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8878 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:17:54.8878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:17:54.8878 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:17:54.9054 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:17:54.9054 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:17:54.9054 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:17:54.9054 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:17:54.9054 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:17:54.9054 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:17:54.9054 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:17:54.9054 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:17:54.9054 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:26:53.8582 Info Message Template Auto Format enabled
+2022-10-25 19:26:53.8821 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:26:53.9209 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:26:53.9209 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:26:53.9209 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9209 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:26:53.9209 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:26:53.9209 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9209 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:26:53.9356 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9356 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:26:53.9356 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9356 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:26:53.9356 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:26:53.9356 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:26:53.9356 Trace ParseRulesElement
+2022-10-25 19:26:53.9505 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:26:53.9505 Debug --- NLog configuration dump ---
+2022-10-25 19:26:53.9505 Debug Targets:
+2022-10-25 19:26:53.9505 Debug FileTarget(Name=logfile)
+2022-10-25 19:26:53.9505 Debug Rules:
+2022-10-25 19:26:53.9505 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:26:53.9505 Debug --- End of NLog configuration dump ---
+2022-10-25 19:26:53.9505 Trace FindReachableObject<System.Object>:
+2022-10-25 19:26:53.9505 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:26:53.9505 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:26:53.9505 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:26:53.9661 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:26:53.9661 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:26:53.9661 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:26:53.9661 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9661 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:26:53.9661 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9661 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:26:53.9661 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:26:53.9661 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:26:53.9661 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:26:53.9661 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9661 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:26:53.9661 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9661 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:26:53.9661 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:26:53.9661 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:26:53.9661 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:26:53.9661 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:26:53.9661 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:26:53.9661 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:26:53.9661 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:26:53.9661 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:26:53.9661 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:26:53.9661 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:26:53.9814 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:26:53.9814 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:26:53.9814 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9814 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:26:53.9814 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:26:53.9814 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:26:53.9814 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9814 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:26:53.9814 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9814 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:26:53.9814 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:26:53.9814 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:26:53.9814 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:26:53.9814 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:26:53.9814 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:26:53.9814 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:26:53.9814 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:26:53.9814 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9814 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:26:53.9814 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:26:53.9814 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:26:53.9814 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:26:53.9814 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:26:53.9814 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:26:53.9814 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:26:53.9814 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:26:53.9814 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:26:53.9814 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:26:53.9814 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:26:53.9814 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:26:54.9591 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:26:54.9591 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:26:54.9591 Trace Flushing all 1 targets...
+2022-10-25 19:26:54.9688 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:26:54.9688 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:26:54.9850 Trace Continuation invoked: 
+2022-10-25 19:26:54.9850 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:26:54.9850 Debug Flush completed
+2022-10-25 19:26:54.9850 Debug Closing logging configuration...
+2022-10-25 19:26:54.9850 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:26:55.0033 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:26:55.0033 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:26:55.0033 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:26:55.0033 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:26:55.0033 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:26:55.0033 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:26:55.0033 Debug Finished closing logging configuration.
+2022-10-25 19:26:55.0033 Info LogFactory has been closed.
+2022-10-25 19:27:04.0341 Info Message Template Auto Format enabled
+2022-10-25 19:27:04.0542 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:27:04.0850 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:27:04.0850 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:04.0928 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.0928 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:04.0928 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:04.0928 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.0928 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:04.0928 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.0928 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:04.0928 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.0928 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:04.1065 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:27:04.1065 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:27:04.1065 Trace ParseRulesElement
+2022-10-25 19:27:04.1262 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:27:04.1262 Debug --- NLog configuration dump ---
+2022-10-25 19:27:04.1262 Debug Targets:
+2022-10-25 19:27:04.1262 Debug FileTarget(Name=logfile)
+2022-10-25 19:27:04.1262 Debug Rules:
+2022-10-25 19:27:04.1262 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:27:04.1262 Debug --- End of NLog configuration dump ---
+2022-10-25 19:27:04.1262 Trace FindReachableObject<System.Object>:
+2022-10-25 19:27:04.1377 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:27:04.1377 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:27:04.1377 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:04.1377 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:04.1377 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:04.1377 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:04.1377 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1377 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:04.1377 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1377 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:04.1377 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:04.1377 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:04.1377 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:04.1377 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1377 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:04.1377 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1377 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:04.1377 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:04.1377 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:27:04.1377 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:27:04.1377 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:27:04.1537 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:27:04.1537 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:27:04.1537 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:27:04.1537 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:04.1537 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:27:04.1537 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:04.1537 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:27:04.1537 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:04.1537 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.1537 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:04.1537 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:04.1687 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:04.1687 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1687 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:04.1687 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1687 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:04.1687 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:04.1687 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:27:04.1687 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:04.1687 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:04.1687 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:04.1687 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:04.1687 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:04.1687 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1687 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:04.1687 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:04.1687 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:27:04.1687 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:27:04.1687 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:04.1687 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:04.1687 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:04.1687 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:04.1687 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:04.1687 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:04.1687 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:27:04.1687 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:27:04.8630 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:27:04.8630 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:27:04.8630 Trace Flushing all 1 targets...
+2022-10-25 19:27:04.8630 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:27:04.8630 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:27:04.8630 Trace Continuation invoked: 
+2022-10-25 19:27:04.8630 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:27:04.8730 Debug Flush completed
+2022-10-25 19:27:04.8730 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:27:04.8730 Debug Closing logging configuration...
+2022-10-25 19:27:04.8730 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:27:04.8730 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:27:04.8730 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:27:04.8730 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:04.8730 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:04.8730 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:27:04.8730 Debug Finished closing logging configuration.
+2022-10-25 19:27:04.8730 Info LogFactory has been closed.
+2022-10-25 19:27:12.1965 Info Message Template Auto Format enabled
+2022-10-25 19:27:12.2152 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:27:12.2538 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:27:12.2538 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:12.2660 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.2660 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:12.2660 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:12.2660 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.2660 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:12.2660 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.2660 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:12.2660 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.2660 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:12.2784 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:27:12.2784 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:27:12.2784 Trace ParseRulesElement
+2022-10-25 19:27:12.2947 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:27:12.2947 Debug --- NLog configuration dump ---
+2022-10-25 19:27:12.2947 Debug Targets:
+2022-10-25 19:27:12.2947 Debug FileTarget(Name=logfile)
+2022-10-25 19:27:12.2947 Debug Rules:
+2022-10-25 19:27:12.2947 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:27:12.2947 Debug --- End of NLog configuration dump ---
+2022-10-25 19:27:12.2947 Trace FindReachableObject<System.Object>:
+2022-10-25 19:27:12.2947 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:27:12.2947 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:27:12.3124 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:12.3124 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:12.3124 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:12.3124 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:12.3124 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3124 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:12.3124 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3124 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:12.3124 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:12.3124 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:12.3124 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:12.3124 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3124 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:12.3124 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3124 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:12.3124 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:12.3124 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:27:12.3124 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:27:12.3256 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:27:12.3256 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:27:12.3256 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:27:12.3256 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:27:12.3256 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:12.3256 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:27:12.3256 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:12.3256 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:27:12.3256 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:12.3256 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.3256 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:12.3256 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:12.3256 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:12.3256 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3407 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:12.3407 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3407 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:12.3407 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:12.3407 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:27:12.3407 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:12.3407 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:12.3407 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:12.3407 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:12.3407 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:12.3407 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3407 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:12.3407 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:12.3407 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:27:12.3407 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:27:12.3407 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:12.3407 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:12.3407 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:12.3407 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:12.3407 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:12.3407 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:12.3407 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:27:12.3407 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:27:13.5857 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:27:13.5857 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:27:13.5907 Trace Flushing all 1 targets...
+2022-10-25 19:27:13.5907 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:27:13.5907 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:27:13.5907 Trace Continuation invoked: 
+2022-10-25 19:27:13.5907 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:27:13.5907 Debug Flush completed
+2022-10-25 19:27:13.5907 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:27:13.5907 Debug Closing logging configuration...
+2022-10-25 19:27:13.5907 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:27:13.5907 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:27:13.5907 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:27:13.5907 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:13.5907 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:13.5907 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:27:13.5907 Debug Finished closing logging configuration.
+2022-10-25 19:27:13.5907 Info LogFactory has been closed.
+2022-10-25 19:27:24.4116 Info Message Template Auto Format enabled
+2022-10-25 19:27:24.4286 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:27:24.4599 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:27:24.4599 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:24.4671 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.4671 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:24.4671 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:24.4671 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.4671 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:24.4671 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.4671 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:24.4671 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.4671 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:24.4671 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:27:24.4671 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:27:24.4671 Trace ParseRulesElement
+2022-10-25 19:27:24.4918 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:27:24.4918 Debug --- NLog configuration dump ---
+2022-10-25 19:27:24.4918 Debug Targets:
+2022-10-25 19:27:24.4918 Debug FileTarget(Name=logfile)
+2022-10-25 19:27:24.4918 Debug Rules:
+2022-10-25 19:27:24.4918 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:27:24.4918 Debug --- End of NLog configuration dump ---
+2022-10-25 19:27:24.4995 Trace FindReachableObject<System.Object>:
+2022-10-25 19:27:24.4995 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:27:24.4995 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:27:24.4995 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:24.4995 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:24.4995 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:24.4995 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:24.4995 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.4995 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:24.4995 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.4995 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:24.4995 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:24.4995 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:24.4995 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:24.4995 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.4995 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:24.4995 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.4995 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:24.4995 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:24.4995 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:27:24.4995 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:27:24.4995 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:27:24.4995 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:27:24.5151 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:27:24.5151 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:24.5151 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.5151 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:24.5151 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:24.5151 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:24.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.5151 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:24.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.5151 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:27:24.5151 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:24.5151 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:24.5151 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:24.5151 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:24.5151 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:24.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.5151 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:24.5151 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:24.5151 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:27:24.5151 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:27:24.5285 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:24.5285 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:24.5285 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:24.5285 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:24.5285 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:24.5285 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:24.5285 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:27:24.5285 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:27:32.0089 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:27:32.0089 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:27:32.0135 Trace Flushing all 1 targets...
+2022-10-25 19:27:32.0135 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:27:32.0135 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:27:32.0135 Trace Continuation invoked: 
+2022-10-25 19:27:32.0135 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:27:32.0135 Debug Flush completed
+2022-10-25 19:27:32.0135 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:27:32.0135 Debug Closing logging configuration...
+2022-10-25 19:27:32.0135 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:27:32.0135 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:27:32.0310 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:27:32.0310 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:32.0310 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:27:32.0310 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:27:32.0310 Debug Finished closing logging configuration.
+2022-10-25 19:27:32.0310 Info LogFactory has been closed.
+2022-10-25 19:27:42.6799 Info Message Template Auto Format enabled
+2022-10-25 19:27:42.7278 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:27:42.7965 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:27:42.7965 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:42.8202 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.8284 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:42.8284 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:42.8284 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.8284 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:42.8444 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.8444 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:42.8444 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.8444 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:42.8444 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:27:42.8444 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:27:42.8444 Trace ParseRulesElement
+2022-10-25 19:27:42.8807 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:27:42.8807 Debug --- NLog configuration dump ---
+2022-10-25 19:27:42.8807 Debug Targets:
+2022-10-25 19:27:42.8807 Debug FileTarget(Name=logfile)
+2022-10-25 19:27:42.8807 Debug Rules:
+2022-10-25 19:27:42.8914 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:27:42.8914 Debug --- End of NLog configuration dump ---
+2022-10-25 19:27:42.8914 Trace FindReachableObject<System.Object>:
+2022-10-25 19:27:42.8914 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:27:42.8914 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:27:42.8914 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:42.9041 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:42.9041 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:42.9041 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:42.9041 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9041 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:42.9041 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9041 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:42.9041 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:42.9041 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:42.9041 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:42.9041 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9041 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:42.9041 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9041 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:42.9041 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:42.9041 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:27:42.9041 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:27:42.9041 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:27:42.9247 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:27:42.9247 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:27:42.9247 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:27:42.9247 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:27:42.9343 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:27:42.9343 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.9343 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:42.9343 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:42.9343 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:27:42.9343 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9343 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:27:42.9343 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9343 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:27:42.9343 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:27:42.9343 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:27:42.9343 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:27:42.9343 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:42.9343 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:27:42.9502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9502 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:27:42.9502 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:27:42.9502 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:27:42.9502 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:27:42.9502 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:27:42.9502 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:27:42.9502 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:27:42.9502 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:27:42.9502 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:27:42.9502 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:27:42.9502 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:27:42.9502 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:28:33.0338 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:28:33.0338 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:28:33.0452 Trace Flushing all 1 targets...
+2022-10-25 19:28:33.0452 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:28:33.0706 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:28:33.0706 Trace Continuation invoked: 
+2022-10-25 19:28:33.0706 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:28:33.0768 Debug Flush completed
+2022-10-25 19:28:33.0768 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:28:33.0768 Debug Closing logging configuration...
+2022-10-25 19:28:33.0768 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:28:33.0768 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:28:33.0768 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:28:33.0768 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:28:33.0768 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:28:33.0768 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:28:33.0908 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:28:33.0908 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:28:33.0908 Debug Finished closing logging configuration.
+2022-10-25 19:28:33.0908 Info LogFactory has been closed.
+2022-10-25 19:29:14.3462 Info Message Template Auto Format enabled
+2022-10-25 19:29:14.3762 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:29:14.4403 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:29:14.4403 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:29:14.4634 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.4680 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:29:14.4851 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:29:14.4851 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.4851 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:29:14.4978 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.4978 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:29:14.4978 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.4978 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:29:14.4978 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:29:14.4978 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:29:14.4978 Trace ParseRulesElement
+2022-10-25 19:29:14.5350 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:29:14.5350 Debug --- NLog configuration dump ---
+2022-10-25 19:29:14.5350 Debug Targets:
+2022-10-25 19:29:14.5350 Debug FileTarget(Name=logfile)
+2022-10-25 19:29:14.5350 Debug Rules:
+2022-10-25 19:29:14.5447 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:29:14.5447 Debug --- End of NLog configuration dump ---
+2022-10-25 19:29:14.5447 Trace FindReachableObject<System.Object>:
+2022-10-25 19:29:14.5447 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:29:14.5447 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:29:14.5447 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:29:14.5602 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:29:14.5602 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:29:14.5602 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:29:14.5602 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5602 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:29:14.5602 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5602 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:29:14.5602 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:29:14.5602 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:29:14.5602 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:29:14.5602 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5602 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:29:14.5602 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5602 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:29:14.5602 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:29:14.5602 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:29:14.5751 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:29:14.5751 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:29:14.5751 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:29:14.5751 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:29:14.5907 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:29:14.5907 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.5907 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:29:14.5907 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:29:14.5907 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:29:14.5907 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5907 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:29:14.5907 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5907 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:29:14.5907 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:29:14.5907 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:29:14.5907 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:29:14.5907 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:29:14.5907 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:29:14.5907 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5907 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:29:14.5907 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:29:14.5907 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:29:14.6105 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:29:14.6105 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:29:14.6105 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:29:14.6105 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:29:14.6105 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:29:14.6105 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:29:14.6105 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:29:14.6105 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:29:14.6105 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:30:20.6494 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:30:20.6632 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:30:20.6727 Trace Flushing all 1 targets...
+2022-10-25 19:30:20.6727 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:30:20.6893 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:30:20.6893 Trace Continuation invoked: 
+2022-10-25 19:30:20.6893 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:30:20.6893 Debug Flush completed
+2022-10-25 19:30:20.6893 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:30:20.6893 Debug Closing logging configuration...
+2022-10-25 19:30:20.6893 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:30:20.6893 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:30:20.7028 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:30:20.7028 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:30:20.7028 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:30:20.7028 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:30:20.7028 Debug Finished closing logging configuration.
+2022-10-25 19:30:20.7028 Info LogFactory has been closed.
+2022-10-25 19:34:40.5526 Info Message Template Auto Format enabled
+2022-10-25 19:34:40.6364 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:34:40.8183 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:34:40.8269 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:34:40.8421 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.8421 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:34:40.8421 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:34:40.8421 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.8421 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:34:40.8628 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.8628 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:34:40.8628 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.8628 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:34:40.8628 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:34:40.8628 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:34:40.8628 Trace ParseRulesElement
+2022-10-25 19:34:40.8991 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:34:40.8991 Debug --- NLog configuration dump ---
+2022-10-25 19:34:40.8991 Debug Targets:
+2022-10-25 19:34:40.9046 Debug FileTarget(Name=logfile)
+2022-10-25 19:34:40.9046 Debug Rules:
+2022-10-25 19:34:40.9046 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:34:40.9046 Debug --- End of NLog configuration dump ---
+2022-10-25 19:34:40.9205 Trace FindReachableObject<System.Object>:
+2022-10-25 19:34:40.9205 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:34:40.9205 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:34:40.9205 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:34:40.9357 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:34:40.9357 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:34:40.9357 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:34:40.9357 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9357 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:34:40.9357 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9357 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:34:40.9357 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:34:40.9357 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:34:40.9357 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:34:40.9357 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9357 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:34:40.9357 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9357 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:34:40.9357 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:34:40.9357 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:34:40.9506 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:34:40.9506 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:34:40.9686 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:34:40.9686 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:34:40.9825 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:34:40.9825 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:34:40.9825 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:34:40.9825 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:34:40.9825 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:34:40.9825 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:34:40.9974 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.9974 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:34:40.9974 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:34:40.9974 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:34:40.9974 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9974 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:34:40.9974 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:40.9974 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:34:40.9974 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:34:40.9974 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:34:40.9974 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:34:40.9974 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:34:40.9974 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:34:40.9974 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:34:41.0127 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:34:41.0127 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:41.0127 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:34:41.0127 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:34:41.0127 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:34:41.0127 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:34:41.0127 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:34:41.0127 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:34:41.0127 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:34:41.0127 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:34:41.0127 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:34:41.0127 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:34:41.0127 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:34:41.0127 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:40:39.5887 Info Message Template Auto Format enabled
+2022-10-25 19:40:39.6287 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:40:39.7126 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:40:39.7180 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:39.7180 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.7180 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:39.7327 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:39.7327 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.7327 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:39.7327 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.7327 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:39.7327 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.7327 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:39.7327 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:40:39.7327 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:40:39.7327 Trace ParseRulesElement
+2022-10-25 19:40:39.7631 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:40:39.7631 Debug --- NLog configuration dump ---
+2022-10-25 19:40:39.7631 Debug Targets:
+2022-10-25 19:40:39.7631 Debug FileTarget(Name=logfile)
+2022-10-25 19:40:39.7631 Debug Rules:
+2022-10-25 19:40:39.7631 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:40:39.7631 Debug --- End of NLog configuration dump ---
+2022-10-25 19:40:39.7631 Trace FindReachableObject<System.Object>:
+2022-10-25 19:40:39.7631 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:40:39.7631 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:40:39.7788 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:40:39.7788 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:40:39.7788 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:39.7788 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:39.7788 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.7788 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:39.7788 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.7788 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:40:39.7788 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:39.7788 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:39.7788 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:39.7788 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.7788 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:39.7788 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.7788 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:39.7788 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:40:39.7788 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:40:39.7788 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:40:39.7788 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:40:39.7950 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:40:39.7950 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:40:39.7950 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:40:39.7950 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:39.7950 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:40:39.7950 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:39.7950 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:40:39.7950 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:40:39.7950 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.8097 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:39.8097 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:39.8097 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:39.8097 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.8097 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:39.8097 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.8097 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:39.8097 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:39.8097 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:40:39.8097 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:39.8097 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:40:39.8097 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:39.8097 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:39.8097 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:39.8097 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.8097 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:39.8097 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:39.8097 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:40:39.8097 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:40:39.8097 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:40:39.8097 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:40:39.8097 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:39.8097 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:40:39.8097 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:39.8097 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:40:39.8251 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:40:39.8251 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:40:58.9759 Info Message Template Auto Format enabled
+2022-10-25 19:40:59.1436 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:40:59.3783 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:40:59.3887 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:59.4062 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.4062 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:59.4194 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:59.4194 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.4194 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:59.4194 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.4194 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:59.4194 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.4194 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:59.4194 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:40:59.4194 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:40:59.4194 Trace ParseRulesElement
+2022-10-25 19:40:59.4657 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:40:59.4657 Debug --- NLog configuration dump ---
+2022-10-25 19:40:59.4657 Debug Targets:
+2022-10-25 19:40:59.4657 Debug FileTarget(Name=logfile)
+2022-10-25 19:40:59.4657 Debug Rules:
+2022-10-25 19:40:59.4657 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:40:59.4657 Debug --- End of NLog configuration dump ---
+2022-10-25 19:40:59.4657 Trace FindReachableObject<System.Object>:
+2022-10-25 19:40:59.4657 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:40:59.4823 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:40:59.4823 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:40:59.4823 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:40:59.4823 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:59.4823 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:59.4823 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.4823 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:59.4823 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.4823 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:40:59.4823 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:59.4823 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:59.4823 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:59.4823 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.4823 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:59.4823 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.4823 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:59.4970 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:40:59.4970 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:40:59.4970 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:40:59.4970 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:40:59.4970 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:40:59.4970 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:40:59.4970 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:40:59.5131 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:40:59.5131 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.5131 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:59.5131 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:59.5131 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:40:59.5131 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.5131 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:40:59.5131 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.5131 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:40:59.5131 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:40:59.5131 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:40:59.5131 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:40:59.5131 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:59.5131 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:40:59.5131 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.5131 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:40:59.5131 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:40:59.5131 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:40:59.5311 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:40:59.5311 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:40:59.5311 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:40:59.5311 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:40:59.5311 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:40:59.5311 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:40:59.5311 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:40:59.5311 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:40:59.5311 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:41:28.9145 Info Message Template Auto Format enabled
+2022-10-25 19:41:28.9366 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:41:28.9792 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:41:28.9827 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:28.9827 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:28.9827 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:28.9827 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:28.9971 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:28.9971 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:28.9971 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:28.9971 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:28.9971 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:28.9971 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:28.9971 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:41:28.9971 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:41:28.9971 Trace ParseRulesElement
+2022-10-25 19:41:29.0162 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:41:29.0162 Debug --- NLog configuration dump ---
+2022-10-25 19:41:29.0162 Debug Targets:
+2022-10-25 19:41:29.0162 Debug FileTarget(Name=logfile)
+2022-10-25 19:41:29.0162 Debug Rules:
+2022-10-25 19:41:29.0162 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:41:29.0162 Debug --- End of NLog configuration dump ---
+2022-10-25 19:41:29.0162 Trace FindReachableObject<System.Object>:
+2022-10-25 19:41:29.0162 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:41:29.0287 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:41:29.0287 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:41:29.0287 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:41:29.0287 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:29.0287 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:29.0287 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0287 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:29.0287 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0287 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:41:29.0287 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:29.0287 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:29.0287 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:29.0287 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0287 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:29.0287 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0287 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:29.0287 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:41:29.0287 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:41:29.0287 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:41:29.0287 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:41:29.0287 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:41:29.0484 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:41:29.0484 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:41:29.0484 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:29.0484 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:41:29.0484 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:29.0484 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:41:29.0484 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:41:29.0484 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:29.0484 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:29.0484 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:29.0484 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:29.0484 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0484 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:29.0484 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0484 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:29.0596 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:29.0596 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:41:29.0596 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:29.0596 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:41:29.0596 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:29.0596 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:29.0596 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:29.0596 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0596 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:29.0596 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:29.0596 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:41:29.0596 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:41:29.0596 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:41:29.0596 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:41:29.0596 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:29.0596 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:41:29.0596 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:29.0596 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:41:29.0596 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:41:29.0596 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:41:33.9228 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:41:33.9228 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:41:33.9228 Trace Flushing all 1 targets...
+2022-10-25 19:41:33.9398 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:41:33.9398 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:41:33.9398 Trace Continuation invoked: 
+2022-10-25 19:41:33.9398 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:41:33.9534 Debug Flush completed
+2022-10-25 19:41:33.9534 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:41:33.9534 Debug Closing logging configuration...
+2022-10-25 19:41:33.9534 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:41:33.9534 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:41:33.9534 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:41:33.9534 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:41:33.9534 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:41:33.9534 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:41:33.9534 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:41:33.9658 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:41:33.9658 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:41:33.9658 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:41:33.9658 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:41:33.9658 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:41:33.9658 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:41:33.9658 Debug Finished closing logging configuration.
+2022-10-25 19:41:33.9658 Info LogFactory has been closed.
+2022-10-25 19:41:42.6080 Info Message Template Auto Format enabled
+2022-10-25 19:41:42.6324 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:41:42.6744 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:41:42.6744 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:42.6859 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.6859 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:42.6859 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:42.6859 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.6859 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:42.6859 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.6859 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:42.6859 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.6859 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:42.6859 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:41:42.6859 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:41:42.6859 Trace ParseRulesElement
+2022-10-25 19:41:42.7125 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:41:42.7125 Debug --- NLog configuration dump ---
+2022-10-25 19:41:42.7125 Debug Targets:
+2022-10-25 19:41:42.7159 Debug FileTarget(Name=logfile)
+2022-10-25 19:41:42.7159 Debug Rules:
+2022-10-25 19:41:42.7159 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:41:42.7159 Debug --- End of NLog configuration dump ---
+2022-10-25 19:41:42.7159 Trace FindReachableObject<System.Object>:
+2022-10-25 19:41:42.7159 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:41:42.7159 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:41:42.7159 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:41:42.7159 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:41:42.7159 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:42.7159 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:42.7159 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7159 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:42.7311 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7311 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:41:42.7311 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:42.7311 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:42.7311 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:42.7311 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7311 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:42.7311 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7311 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:42.7311 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:41:42.7311 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:41:42.7311 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:41:42.7311 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:41:42.7311 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:41:42.7478 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:41:42.7478 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:41:42.7478 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.7478 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:42.7478 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:42.7478 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:41:42.7478 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7478 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:41:42.7478 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7478 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:41:42.7478 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:41:42.7478 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:41:42.7478 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:41:42.7478 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:42.7478 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:41:42.7478 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7478 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:41:42.7478 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:41:42.7478 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:41:42.7636 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:41:42.7636 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:41:42.7636 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:41:42.7636 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:41:42.7636 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:41:42.7636 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:41:42.7636 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:41:42.7636 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:41:42.7636 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-10-25 19:42:51.8390 Info AppDomain Shutting down. LogFactory closing...
+2022-10-25 19:42:51.8418 Debug Stopping file watching for path 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API' filter 'nlog.config'
+2022-10-25 19:42:51.8418 Trace Flushing all 1 targets...
+2022-10-25 19:42:51.8418 Trace ForEachItemInParallel() 1 items
+2022-10-25 19:42:51.8418 Trace FileTarget(Name=logfile): FlushAsync
+2022-10-25 19:42:51.8418 Trace Continuation invoked: 
+2022-10-25 19:42:51.8418 Trace Parallel task completed. 0 items remaining
+2022-10-25 19:42:51.8418 Debug Flush completed
+2022-10-25 19:42:51.8418 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-10-25 19:42:51.8418 Debug Closing logging configuration...
+2022-10-25 19:42:51.8418 Trace Closing FileTarget(Name=logfile)
+2022-10-25 19:42:51.8418 Debug FileTarget(Name=logfile): Closing...
+2022-10-25 19:42:51.8563 Debug FileTarget(Name=logfile): Closed.
+2022-10-25 19:42:51.8563 Trace Closing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${shortdate}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:42:51.8563 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${longdate}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${level}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${literal}
+2022-10-25 19:42:51.8563 Trace Closing Layout Renderer: ${message}
+2022-10-25 19:42:51.8563 Debug Finished closing logging configuration.
+2022-10-25 19:42:51.8563 Info LogFactory has been closed.
+2022-10-25 19:45:00.2752 Info Message Template Auto Format enabled
+2022-10-25 19:45:00.3389 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-10-25 19:45:00.4116 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-10-25 19:45:00.4189 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:45:00.4189 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.4189 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:45:00.4384 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:45:00.4384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.4384 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:45:00.4384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.4384 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:45:00.4384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.4384 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:45:00.4384 Info Adding target FileTarget(Name=logfile)
+2022-10-25 19:45:00.4531 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-10-25 19:45:00.4531 Trace ParseRulesElement
+2022-10-25 19:45:00.4913 Debug Watching file-filter 'nlog.config' in directory: C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API
+2022-10-25 19:45:00.4913 Debug --- NLog configuration dump ---
+2022-10-25 19:45:00.4913 Debug Targets:
+2022-10-25 19:45:00.4913 Debug FileTarget(Name=logfile)
+2022-10-25 19:45:00.4913 Debug Rules:
+2022-10-25 19:45:00.5008 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-10-25 19:45:00.5008 Debug --- End of NLog configuration dump ---
+2022-10-25 19:45:00.5008 Trace FindReachableObject<System.Object>:
+2022-10-25 19:45:00.5008 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-10-25 19:45:00.5008 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-10-25 19:45:00.5141 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:45:00.5141 Trace   Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:45:00.5141 Trace   Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:45:00.5141 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:45:00.5141 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5141 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:45:00.5141 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5141 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:45:00.5141 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:45:00.5141 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:45:00.5141 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:45:00.5141 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5141 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:45:00.5141 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5294 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:45:00.5294 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:45:00.5294 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-10-25 19:45:00.5294 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-10-25 19:45:00.5294 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\nlog.config
+2022-10-25 19:45:00.5516 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-10-25 19:45:00.5615 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-10-25 19:45:00.5615 Trace Initializing Layout Renderer: ${message}
+2022-10-25 19:45:00.5615 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:45:00.5615 Trace Initializing Layout Renderer: ${level}
+2022-10-25 19:45:00.5615 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:45:00.5615 Trace Initializing Layout Renderer: ${longdate}
+2022-10-25 19:45:00.5615 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-10-25 19:45:00.5782 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.5782 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:45:00.5782 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:45:00.5782 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-10-25 19:45:00.5782 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5782 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-10-25 19:45:00.5782 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5782 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-10-25 19:45:00.5782 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:45:00.5782 Trace Initializing Layout Renderer: ${shortdate}
+2022-10-25 19:45:00.5782 Trace Initializing Layout Renderer: ${literal}
+2022-10-25 19:45:00.5782 Trace Initializing C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt
+2022-10-25 19:45:00.5782 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-10-25 19:45:00.5782 Trace Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:45:00.5908 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-10-25 19:45:00.5908 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5908 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-10-25 19:45:00.5908 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-10-25 19:45:00.5908 Trace Initializing FileTarget(Name=logfile)
+2022-10-25 19:45:00.5908 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-10-25 19:45:00.5908 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-10-25 19:45:00.5908 Trace  Scanning Property FileName 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-10-25 19:45:00.5908 Trace  Scanning SimpleLayout 'C:\Users\xusan\Desktop\Projects\GapUp.API\GapUp.API\logs\${shortdate}_logfile.txt'
+2022-10-25 19:45:00.5908 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-10-25 19:45:00.5908 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-10-25 19:45:00.5908 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-10-25 19:45:00.5908 Trace FileTarget(Name=logfile) has 2 layouts
+2022-10-25 19:45:00.5908 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory

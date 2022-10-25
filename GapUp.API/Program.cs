@@ -15,6 +15,7 @@ LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nl
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddScoped<ILoggerManager, LoggerManager>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -25,10 +26,10 @@ builder.Services.ConfigureRepositoryManager();
 builder.Services.AddDbContext<GapUpDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("GapUpDb")));
 
 var app = builder.Build();
-using var scope = app.Services.CreateScope();
+//using var scope = app.Services.CreateScope();
 
-var logger = scope.ServiceProvider.GetRequiredService<ILoggerManager>();
-app.ConfigureExceptionHandler(logger);
+//var logger = scope.ServiceProvider.GetRequiredService<ILoggerManager>();
+//app.ConfigureExceptionHandler(logger);
 
 if (app.Environment.IsDevelopment())
 {

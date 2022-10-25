@@ -14,16 +14,17 @@ namespace GapUp.Data.Repositories
         {
             this.dbContext = dbContext;
         }
-        public void AddProduct(Product product) => Create(product);
-        
-
+        public async Task<Product> AddProduct(Product product)
+        {
+            await dbContext.Products.AddAsync(product);
+            return product;
+        }
         public async Task<bool> DeleteProduct(Guid id)
         {
             var product = await dbContext.Products.FindAsync(id);
             if (product != null)
             {
-                dbContext.Products.Remove(product);
-                await dbContext.SaveChangesAsync();
+                Delete(product);
                 return true;
             }
             return false;
@@ -45,5 +46,7 @@ namespace GapUp.Data.Repositories
             await dbContext.SaveChangesAsync();
             return product;
         }
+
+     
     }
 }

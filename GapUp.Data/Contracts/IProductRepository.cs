@@ -10,9 +10,9 @@ namespace GapUp.Data.Contracts
 {
     public interface IProductRepository
     {
-        Task<IQueryable<Product>> GetAllProductsAsync(bool trackchanges);
+        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackchanges);
         Task<Product> GetProductAsync(Guid id, bool trackChanges);
-        void AddProduct(Product product);
+        Task<Product> AddProduct(Product product);
         Task<Product> UpdateProduct(Guid id, Product product);
         Task<bool> DeleteProduct(Guid id);
     }

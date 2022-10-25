@@ -18,9 +18,13 @@ namespace GapUp.Services.Services
         }
         public async Task<ProductViewModel> Create(ProductViewModel productViewModel)
         {
-            var createdProduct = await productRepository.AddProduct((Product)productViewModel);
+            var product = mapper.Map<Product>(productViewModel);
 
-            return (ProductViewModel)createdProduct;
+            var createdProduct = await productRepository.AddProduct(product);
+
+            var productView = mapper.Map<ProductViewModel>(createdProduct);
+            
+            return productView;
 
         }
 
@@ -33,23 +37,29 @@ namespace GapUp.Services.Services
         {
             var product = await productRepository.GetProductAsync(id, trackChanges: false);
             
-            return (ProductViewModel)product;
+            var productView = mapper.Map<ProductViewModel>(product);
+
+            return productView;
         }
 
-        public async Task<IEnumerable<ProductViewModel>> GetAll()
+        public async Task<IEnumerable<ProductViewModel>> GetAll(bool trackchanges)
         {
             var products = await productRepository.GetAllProductsAsync(trackchanges: false);
 
-            var productViewModel = mapper.Map<IEnumerable<ProductViewModel>>(products);
+            var productViewModel = mapper.Map<Product>(products);
 
-            return productViewModel;
+            return (IEnumerable<ProductViewModel>)productViewModel;
         }
 
         public async Task<ProductViewModel> Update(Guid id, ProductViewModel productViewModel)
         {
-            var updatedProduct = await productRepository.UpdateProduct(id, (Product)productViewModel);
+            var productEntity = mapper.Map<Product>(productViewModel);
+
+            var updatedProduct = await productRepository.UpdateProduct(id, productEntity);
+
+            var productView = mapper.Map<ProductViewModel>(updatedProduct);
             
-            return (ProductViewModel)updatedProduct;
+            return productView;
         }
     }
 }
